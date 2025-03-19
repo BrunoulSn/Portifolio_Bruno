@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somethings</title>
+    <script src="indexController.js"></script>
+</head>
+
+<body>
+    <aside class="" id="navBarAside">
+        <div class="menuIcon" id="menuIcon" onclick="disableNavBar();"><img src="list.png" alt="icon"></div>
+
+        <div id="navBarText" class="">
+            <h2>Menu</h2>
+        </div>
+
+        </div>
+        <div id="navBarOptions" class="">
+            <div class="navOptions">
+                <div>
+                    <p>Sobre</p>
+                </div>
+                <div>
+                    <p>Projetos</p>
+                </div>
+                <div>
+                    <p>Contatos</p>
+                </div>
+            </div>
+        </div>
+        <div id="navBarLogo" class="">
+            <div class="logo">
+                <img src="Caio-Retrato.png" alt="">
+            </div>
+        </div>
+
+
+
+    </aside>
+
+
+    <main>
+        <div>
+            <h1>Principais Projetos</h1>
+        </div>
+
+        <div class="projectsArticle">
+
+            <article>
+
+                <div class="plans">
+                    <h1>Plano Simples</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum id sit sunt tenetur repellat, in
+                        nesciunt alias, iste, quaerat rerum ullam rem incidunt? Libero esse hic quod cupiditate. Fugiat,
+                        totam.</p>
+                    <img src="Caio-Retrato.png" alt="">
+                </div>
+            </article>
+            <article>
+                <div class="plans">
+                    <h1>Plano Médio</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nostrum odio blanditiis corporis,
+                        a quos quod voluptates repellendus. Officiis laborum recusandae pariatur autem minus fuga
+                        adipisci. Eligendi ducimus sit unde.</p>
+                    <img src="Caio-Retrato.png" alt="">
+                </div>
+            </article>
+            <article>
+                <div class="plans">
+                    <h1>Plano Cheio</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, praesentium enim? Sapiente
+                        nam voluptatem perferendis, hic ratione aliquid assumenda tenetur exercitationem adipisci ipsam
+                        officiis eos tempore eius iste vitae minus.</p>
+                    <img src="Caio-Retrato.png" alt="">
+                </div>
+            </article>
+        </div>
+    </main>
+
+    </div>
+</body>
+
+</html>
+
+<style>
+    h1,
+    h2,
+    h3,
+    h4 {
+        cursor: context-menu;
+        text-align: center;
+        font-style: italic
+    }
+
+    body {
+        margin: 0;
+        background-color: rgb(89, 85, 85);
+        height: 100vh;
+        display: flex;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+    }
+
+    .projectsArticle {
+        display: flex;
+    }
+
+    aside {
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        transform: translateX(0);
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        width: 200px;
+        box-sizing: border-box;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 18px;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+    }
+
+    aside h2 {
+        font-size: 40px;
+        font-style: italic;
+    }
+
+    .logo img {
+        border-radius: 30px;
+        cursor: pointer;
+        width: 150px;
+        box-shadow: rgb(0, 0, 0) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 5px;
+    }
+
+    .navOptions {
+
+        margin-top: -40px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .navOptions div {
+        transition: 1s;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        cursor: pointer;
+        border-radius: 20px;
+        box-shadow: rgba(184, 168, 168, 0.24) 0px 3px 8px;
+        background-color: #575757;
+        padding: 10px 0;
+    }
+
+    .navOptions div:hover {
+        transition: 0.8s;
+        background-color: rgb(164, 148, 148);
+    }
+
+    .navOptions div p {
+        font-size: 25px;
+    }
+
+    .menuIcon {
+        transition: 2s;
+        transform: translateX(-0%);
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .menuIconRight {
+        transition: 1s;
+        transform: translateX(77%);
+    }
+
+    .menuIcon img {
+        cursor: pointer;
+        width: 50px;
+
+    }
+
+    .navBarItemOff {
+        transition: 1s;
+        transform: translateX(-100%);
+    }
+
+    aside.closeNavBar {
+        transition: 1s;
+        transform: translateX(-70%);
+
+
+    }
+
+    main {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1500px;
+    }
+
+    article {
+        transition: 1s;
+        margin: 10px;
+        background-color: rgb(104, 104, 104);
+        width: 400px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 18px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    article:hover {
+        transition: 0.5s;
+        box-shadow: rgba(255, 255, 255, 0.24) 10px 10px 100px;
+
+    }
+
+    article h1 {
+        border-style: ridge;
+        border-color: black;
+        border-left-color: gray;
+        background-color: aqua;
+    }
+
+    .plans {
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+</style>
