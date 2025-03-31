@@ -6,37 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somethings</title>
     <script src="indexController.js"></script>
+    <link rel="stylesheet" href="indexStyle.css">
 </head>
 
 <body>
 
-    <aside class="" id="navBarAside">
-        <div class="menuIcon" id="menuIcon" onclick="disableNavBar();"><img src="list.png" alt="icon"></div>
+    <aside class="closeNavBar" id="navBarAside">
+        <div class="menuIcon menuIconRight" id="menuIcon" onclick="disableNavBar();"><img src="list.png" alt="icon"></div>
 
         <div>
-            <div id="navBarText" class="">
+            <div id="navBarText" class="navBarItemOff">
                 <h2>Menu</h2>
             </div>
-        </div>
 
-        <div id="navBar" class="">
-            <div class="navOptions">
-                <div>
-                    <p>Sobre</p>
-                </div>
-                <div>
-                    <p>Projetos</p>
-                </div>
-                <div>
-                    <p>Contatos</p>
+
+            <div id="navBar" class="navBarItemOff">
+                <div class="navOptions">
+                    <div>
+                        <p>Sobre</p>
+                    </div>
+                    <div>
+                        <p>Projetos</p>
+                    </div>
+                    <div>
+                        <p>Contatos</p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div id="navBarLogo" class="">
+        <div id="navBarLogo" class="navBarItemOff">
             <div class="logo"><img src="Caio-Retrato.png" alt=""></div>
         </div>
-        <div class="iconRedesSociais">
+        <div id="iconRedesSociais" class="navBarItemOff">
             <div>
                 <a href="https://www.instagram.com/bruno_criist?igshid=MmVlMjlkMTBhMg==" target="_blank"><img
                         src="https://freepngimg.com/download/logo/69768-logo-computer-layout-instagram-icons-png-file-hd.png"
@@ -44,12 +45,15 @@
 
             </div>
 
-            <div><a href="https://br.linkedin.com/in/bruno-cristiano-64891b256?trk=people-guest_people_search-card" target="_blank">
-                <img src="https://static.vecteezy.com/system/resources/previews/023/986/970/original/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" alt=""></a>
+            <div><a href="https://br.linkedin.com/in/bruno-cristiano-64891b256?trk=people-guest_people_search-card"
+                    target="_blank">
+                    <img src="https://static.vecteezy.com/system/resources/previews/023/986/970/original/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png"
+                        alt=""></a>
             </div>
 
             <div>
-                <a href="https://github.com/BrunoulSn/" target="_blank"><img src="https://pngimg.com/uploads/github/github_PNG80.png" alt=""></a>
+                <a href="https://github.com/BrunoulSn/" target="_blank"><img
+                        src="https://pngimg.com/uploads/github/github_PNG80.png" alt=""></a>
             </div>
         </div>
 
@@ -117,6 +121,12 @@
                 </article>
 
             </div>
+
+
+            <div class="copyright">
+                &copy; 2025 Bruno Cristiano. Todos os direitos reservados.
+            </div>
+            </footer>
         </main>
 
     </div>
@@ -124,229 +134,6 @@
     <footer>
 
 
-        <div class="copyright">
-            &copy; 2025 Bruno Cristiano. Todos os direitos reservados.
-        </div>
-    </footer>
 </body>
 
 </html>
-
-<style>
-    .sobreBruno * {
-        margin: 10px;
-    }
-
-    .sobreBruno img {
-        border-radius: 50%;
-    }
-
-    .sobreBruno h1 {
-        font-style: italic;
-        font-size: 30px;
-    }
-
-    .sobreBruno p {
-        width: 900px;
-        font-size: 20px;
-
-    }
-
-    .sobreBruno {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 20px;
-        width: 1100px;
-        margin: 20px;
-
-    }
-
-    .sobreBruno div {
-        margin: 0;
-        height: 100%;
-        border-radius: 20px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        background-color: rgb(104, 104, 104);
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 20px;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4 {
-        cursor: context-menu;
-        text-align: center;
-        font-style: italic
-    }
-
-    body {
-        margin: 0;
-        background-color: rgb(89, 85, 85);
-        height: 100vh;
-        display: flex;
-    }
-
-    .projects {
-        display: flex;
-        flex-direction: column;
-        margin-left: 40px;
-    }
-
-    .projectsArticle {
-        display: flex;
-    }
-
-    aside {
-        transition: transform 0.5s ease, opacity 0.5s ease;
-        transform: translateX(0);
-        opacity: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 100vh;
-        width: 200px;
-        box-sizing: border-box;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 18px;
-        background-color: #333;
-        color: white;
-        padding: 20px;
-    }
-
-    aside h2 {
-        font-size: 40px;
-        font-style: italic;
-    }
-
-    .logo img {
-        border-radius: 30px;
-        cursor: pointer;
-        width: 150px;
-        box-shadow: rgb(0, 0, 0) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 5px;
-    }
-
-    .navOptions {
-        transition: 1s;
-        margin-top: -40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navOptions div {
-        transition: 1s;
-        margin-top: 15px;
-        display: flex;
-        justify-content: center;
-        width: 150px;
-        cursor: pointer;
-        border-radius: 20px;
-        box-shadow: rgba(184, 168, 168, 0.24) 0px 3px 8px;
-        background-color: #575757;
-        padding: 10px 0;
-    }
-
-    .navOptions div:hover {
-        transition: 0.8s;
-        background-color: rgb(164, 148, 148);
-    }
-
-    .navOptions div p {
-        font-size: 25px;
-    }
-
-    .menuIcon {
-        transition: 0.5s;
-        transform: translateX(-0%);
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .menuIconRight {
-        transition: 1s;
-        transform: translateX(77%);
-    }
-
-    .menuIcon img {
-        cursor: pointer;
-        width: 50px;
-
-    }
-
-    .navBarItemOff {
-        transition: 1s;
-        transform: translateX(-100%);
-        opacity: 0%;
-    }
-
-    aside.closeNavBar {
-        transition: 1s;
-        transform: translateX(-70%);
-
-
-    }
-
-    main {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 1500px;
-    }
-
-    .projectPlans {
-        transition: 1s;
-        margin: 10px;
-        background-color: rgb(104, 104, 104);
-        width: 400px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 18px;
-        border-radius: 20px;
-        cursor: pointer;
-    }
-
-    .projectPlans:hover {
-        transition: 0.5s;
-        box-shadow: rgba(255, 255, 255, 0.24) 10px 10px 100px;
-
-    }
-
-    .projectPlans h1 {
-        border-style: ridge;
-        border-color: black;
-        border-left-color: gray;
-        background-color: aqua;
-    }
-
-    .plans {
-        height: 400px;
-        margin: 20px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .copyright {
-        font-size: 18px;
-        color: #555;
-        padding: 20px;
-    }
-
-    .iconRedesSociais {
-        display: flex;
-        justify-content: space-between;
-        cursor: pointer;
-    }
-
-    .iconRedesSociais img {
-        width: 30px;
-    }
-</style>
