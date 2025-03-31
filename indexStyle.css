@@ -1,0 +1,244 @@
+
+    .sobreBruno * {
+        margin: 10px;
+    }
+
+    .sobreBruno img {
+        border-radius: 50%;
+    }
+
+    .sobreBruno h1 {
+        font-style: italic;
+        font-size: 30px;
+    }
+
+    .sobreBruno p {
+        width: 900px;
+        font-size: 20px;
+
+    }
+
+    .sobreBruno {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        width: 100%;
+        margin: 20px;
+        margin-top: 130px;
+        
+
+    }
+    body{
+        background-size: 100%;
+        background-position: 10px;
+        background-image: url('banner.png');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-color: #2d2c2c;
+    }
+
+    .sobreBruno article {
+        text-align: center;
+        margin: 0;
+        height: 100%;
+        border-radius: 20px;
+        margin-top: 20px;
+        background-color:rgb(104, 104, 104);
+
+    }
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        cursor: context-menu;
+        text-align: center;
+        font-style: italic
+    }
+
+    body {
+        margin: 0;
+        background-color: rgb(89, 85, 85);
+        height: 100vh;
+        display: flex;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+    }
+
+    .projectsArticle {
+        display: flex;
+    }
+
+    aside {
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        transform: translateX(0);
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 200px;
+        box-sizing: border-box;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 18px;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+    }
+
+    aside h2 {
+        font-size: 40px;
+        font-style: italic;
+    }
+
+    .logo img {
+        border-radius: 30px;
+        cursor: pointer;
+        width: 150px;
+        box-shadow: rgb(0, 0, 0) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 5px;
+    }
+
+    .navOptions {
+        transition: 1s;
+        margin-top: -40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navOptions div {
+        transition: 1s;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        cursor: pointer;
+        border-radius: 20px;
+        box-shadow: rgba(184, 168, 168, 0.24) 0px 3px 8px;
+        background-color: #575757;
+        padding: 10px 0;
+    }
+
+    .navOptions div:hover {
+        transition: 0.8s;
+        background-color: rgb(164, 148, 148);
+    }
+
+    .navOptions div p {
+        font-size: 25px;
+    }
+
+    .menuIcon {
+        transition: 0.5s;
+        transform: translateX(-0%);
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        border-radius: 10px;
+    }
+    .menuIcon img:hover{
+        background-color: rgb(147, 147, 147);
+    }
+
+    .menuIconRight {
+        transition: 1s;
+        transform: translateX(77%);
+    }
+    .menuIconRight img{
+        transition: 1s;
+        background-color: rgb(147, 147, 147);
+        border-radius: 10px;
+    }
+    .menuIconRight img:hover{
+        transition: 0.5s;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .menuIcon img {
+        transition: 0.5s;
+        cursor: pointer;
+        width: 50px;
+        border-radius: 10px;
+
+    }
+
+    .navBarItemOff {
+        transition: 1s;
+        transform: translateX(-100%);
+        opacity: 0%;
+    }
+
+    aside.closeNavBar {
+        transition: 1s;
+        transform: translateX(-70%);
+        opacity: 40%;
+
+    }
+
+    main {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1500px;
+    }
+
+    .projectPlans {
+        transition: 1s;
+        margin: 10px;
+        background-color: rgb(104, 104, 104);
+        width: 400px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 18px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .projectPlans:hover {
+        transition: 0.5s;
+        box-shadow: rgba(255, 255, 255, 0.24) 10px 10px 100px;
+
+    }
+
+    .projectPlans h1 {
+        border-style: ridge;
+        border-color: black;
+        border-left-color: gray;
+        background-color: rgb(119, 125, 125);
+    }
+
+    .plans {
+        height: 400px;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .copyright {
+        font-size: 18px;
+        color: #2d2c2c;
+        padding: 20px;
+    }
+
+    #iconRedesSociais {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    #iconRedesSociais img {
+        width: 30px;
+    }

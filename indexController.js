@@ -4,6 +4,7 @@ function disableNavBar() {
     let navBarOptions = document.getElementById('navBar');
     let navBarLogo = document.getElementById('navBarLogo');
     let menuIcon = document.getElementById("menuIcon");
+    let socialMidiaIcon = document.getElementById("iconRedesSociais");
 
     if (navBar.classList.contains("closeNavBar")) {
 
@@ -12,6 +13,8 @@ function disableNavBar() {
         navBarOptions.classList.remove('navBarItemOff');
         navBarLogo.classList.remove('navBarItemOff');
         menuIcon.classList.remove('menuIconRight');
+        socialMidiaIcon.classList.remove('navBarItemOff');
+
 
     } else {
 
@@ -21,5 +24,7 @@ function disableNavBar() {
         navBarText.classList.add('navBarItemOff');
         navBarOptions.classList.add('navBarItemOff');
         navBarLogo.classList.add('navBarItemOff');
+        socialMidiaIcon.classList.add('navBarItemOff');
+
     }
 };
